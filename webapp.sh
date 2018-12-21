@@ -29,11 +29,6 @@ else
     if [ $response = 'Y' ] || [ $response = 'y' ]; then
         echo 'Generating git repo . . .'
         git init
-        git add .
-        git commit -m 'initial commit'
-        read -p 'Please enter the url to your git (.git):' url
-        git remote add origin $url
-        git push -u origin master
     fi
 fi
 
@@ -51,14 +46,24 @@ else
     echo '/node_modules' > '.gitignore'
 fi
 
+echo 'Your web app has been generated!'
+echo 'You can find it at'
+pwd
+
+read -p 'Would you like to push your first commit now? [Y/N]'
+
+if [ $response = 'Y' ] || [ $response = 'y' ]; then
+    git add .
+    git commit -m 'initial commit'
+    read -p 'Please enter the url to your git (.git):' url
+    git remote add origin $url
+    git push -u origin master
+fi
+
 read -p 'Would you like to open VSCode? [Y/N] ' response
 if [ $response = 'Y' ] || [ $response = 'y' ]; then
     code .
 fi
-
-echo 'Your web app has been generated!'
-echo 'You can find it at'
-pwd
 
 read -p 'Would you like to start live-server? [Y/N] ' response
 if [ $response = 'Y' ] || [ $response = 'y' ]; then
