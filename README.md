@@ -45,3 +45,15 @@ As an NPM module it can be installed globally
 **UNTIL THIS NOTICE IS TAKEN DOWN, THIS IS NOT ON NPM YET**
 
 As a shell file, just download the `webapp.sh` file and install as follows:
+
+1.  Move the `webapp.sh` file to `/usr/bin`
+2.  Run as `. webapp.sh [name-of-app] [libraries (optional)]`
+
+Example:
+
+    . webapp.sh myapp lodash
+
+Alternatively alias the file in .bash_profile.
+
+Copy the following into a file called `.bash_aliases`:
+

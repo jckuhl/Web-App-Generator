@@ -1,0 +1,26 @@
+{
+  "name": "webappgen",
+  "version": "1.0.0",
+  "description": "generates skeleton for basic web apps",
+  "main": "webapp.js",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jckuhl/Web-App-Generator.git"
+  },
+  "author": "Jonathan Kuhl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jckuhl/Web-App-Generator/issues"
+  },
+  "homepage": "https://github.com/jckuhl/Web-App-Generator#readme",
+  "files": [
+    "webapp.sh"
+  ]
+}
