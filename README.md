@@ -32,4 +32,16 @@ This will create an application called `myapp` and install jquery, lodash and da
 
 ## Installation
 
-Download the .sh file, put in bin directory and export.
+There are two ways to install
+
+### NPM
+
+As an NPM module it can be installed globally
+
+    npm i -g webapp
+
+[Link to NPM](deadurl)
+
+**UNTIL THIS NOTICE IS TAKEN DOWN, THIS IS NOT ON NPM YET**
+
+As a shell file, just download the `webapp.sh` file and install as follows:
